@@ -16,6 +16,7 @@ body{
     padding: 0;
     width: 100vw;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 ul{
@@ -33,6 +34,15 @@ section{
     background: #a9a6a6;
     background-image: linear-gradient(to right, #f8f8f8 55%, #ebebeb 55% , #ebebeb 100%);
     position: relative;
+}
+
+.logo{
+    font-family: RoadTest, sans-serif;
+    color: black;
+    font-size: 25px;
+    white-space: nowrap;
+    /* position: absolute;
+    left: 30px; */
 }
 
 nav{
@@ -58,19 +68,24 @@ nav ul li a{
     font-size: 15px;
     font-weight: 700;
     color: #191919;
+    display: block;
 }
 
 nav ul li a:hover{
     color: #565555;
 }
 
-.logo{
-    font-family: RoadTest, sans-serif;
-    color: black;
-    font-size: 25px;
-    white-space: nowrap;
-    /* position: absolute;
-    left: 30px; */
+nav ul li a i{
+    display: block;
+    width: 0;
+    height: 1.5px;
+    background-color: #1d1d1d;
+    margin-top: 5px;
+    transition: .3s all ease;
+}
+
+nav ul li a:hover i{
+    width: 80%;
 }
 
 .active{
@@ -80,6 +95,9 @@ nav ul li a:hover{
 
 .active:hover{
     color: #2d2a2a;
+}
+.active i{
+    width: 80%;
 }
 
 /* Menu Btn */
@@ -314,7 +332,7 @@ button:active{
 .services{
     background-color: white;
     font-family: 'Open Sans', sans-serif;
-    padding: 50px 10% 100px 10%;
+    padding: 50px 0 100px 0;
 }
 
 .services-text p:nth-child(1){
@@ -335,24 +353,25 @@ button:active{
 
 }
 
-.services-text p:nth-child(3){
+.services-text p:nth-child(3) a{
     color: #7e7d7d;
+    font-weight: 700;
 
 }
 
 .services-text{
     max-width: 500px;
     min-width: 250px;
-    margin: 50px 0;
+    margin: 50px 10%;
+    /* display: none; */
 }
 
 .box-1, 
 .box-2,
 .box-3{
     min-width: 300px;
-    width: 200px;
     min-height: 280px;
-    height: 320px;
+    height: 350px;
     background-repeat: no-repeat;
     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.3);
     margin: 15px;
@@ -404,6 +423,14 @@ button:active{
     text-align: center;
     width: 230px;
     margin: 0 0 20px 0;
+    color: #8f8f8f;
+}
+
+.box-1 i,
+.box-2 i,
+.box-3 i{
+    font-style: normal;
+    display: none;
     color: #8f8f8f;
 }
 
@@ -651,6 +678,7 @@ footer p:nth-child(2){
     opacity: 65%;
 }
 
+
 }
 
 
@@ -760,8 +788,6 @@ footer p:nth-child(2){
 /* Services */
 
 .services{
-    background-color: white;
-    /* height: 600px; */
     font-family: 'Open Sans', sans-serif;
     padding: 50px 0 100px 0;
 }
@@ -780,12 +806,13 @@ footer p:nth-child(2){
     line-height: 5px;
 }
 
-.services-text p:nth-child(3){
+.services-text p:nth-child(3) a{
     color: #7e7d7d;
     max-width: 350px;
-    line-height: 35px;
+    line-height: 15px;
     margin-left: 25px;
     margin-right: 25px;
+    text-align: center;
 }
 
 .services-text{
