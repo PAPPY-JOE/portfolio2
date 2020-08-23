@@ -16,7 +16,7 @@ body{
     padding: 0;
     width: 100vw;
     overflow-x: hidden;
-    scroll-behavior: smooth;
+    overflow-y: scroll;
 }
 
 ul{
@@ -24,6 +24,7 @@ ul{
 }
 
 a{
+    scroll-behavior: smooth;
     text-decoration: none;
 }
 
@@ -353,9 +354,14 @@ button:active{
 
 }
 
+.services-text p:nth-child(3) a:hover{
+    font-size: large;
+}
+
 .services-text p:nth-child(3) a{
     color: #7e7d7d;
     font-weight: 700;
+    text-decoration: underline;
 
 }
 
@@ -363,7 +369,6 @@ button:active{
     max-width: 500px;
     min-width: 250px;
     margin: 50px 10%;
-    /* display: none; */
 }
 
 .box-1, 
@@ -444,6 +449,7 @@ button:active{
     outline: none;
     border-radius: 5px;
     font-family: 'Oswald', sans-serif;
+    margin-top: 10px;
 }
 
 /* Contact Me */
