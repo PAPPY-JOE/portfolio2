@@ -1,41 +1,55 @@
-
-// Services animation
+// Sevices animation
 
 let observer1 = new IntersectionObserver(function(entries) {
 	if(entries[0].isIntersecting === true){
         // To check if it works
         // console.log('Element is fully visible in screen');
         $('.services-text p').fadeIn(1250);
-        $('.services-text p a').fadeIn(1250, function () {
-            
-            $('.box-1 p, .box-1 button').slideDown(800, function () {
-                
-                $('.box-2 p, .box-2 button').slideDown(800, function () {
-                  
-                    $('.box-3 p, .box-3 button').slideDown(800);
-                });
-            });
-        });
+        $('.services-text p a').fadeIn(1250);
     }
     else if (entries[0].isIntersecting === false){
         // To check if it works     
         // console.log('Element is not fully visible in screen');
         $('.services-text p').fadeOut(150);
-        $('.services-text p a').fadeOut(150, function () {
-            
-            $('.box-1 p, .box-1 button').slideUp(300, function () {
+        $('.services-text p a').fadeOut(150);
+    }        
+    
+}, { threshold: [0] });
+
+observer1.observe(document.body.querySelector(".services-text"));
+
+
+// Services boxes animation
+
+let Boxobserver = new IntersectionObserver(function(entries) {
+	if(entries[0].isIntersecting === true){
+        // To check if it works
+        // console.log('Element is fully visible in screen');            
+        $('.box-1 p, .box-1 button').slideDown(800, function () {
                 
-                $('.box-2 p, .box-2 button').slideUp(300, function () {
+            $('.box-2 p, .box-2 button').slideDown(800, function () {
+                
+                $('.box-3 p, .box-3 button').slideDown(800);
+            });
+        });
+    }
+    else if (entries[0].isIntersecting === false){
+        // To check if it works     
+        // console.log('Element is not fully visible in screen');            
+        $('.box-1 p, .box-1 button').slideUp(300, function () {
+                
+            $('.box-2 p, .box-2 button').slideUp(300, function () {
                   
-                    $('.box-3 p, .box-3 button').slideUp(300);
-                });
+                $('.box-3 p, .box-3 button').slideUp(300);
             });
         });
     }        
     
 }, { threshold: [0] });
 
-observer1.observe(document.body.querySelector(".services-text"));
+Boxobserver.observe(document.body.querySelector(".box-container"));
+
+
 
 
 // About Me animation
