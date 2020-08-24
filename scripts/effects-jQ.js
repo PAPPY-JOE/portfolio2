@@ -1,3 +1,28 @@
+// About Me animation
+
+
+let observer2 = new IntersectionObserver(function(entries) {
+	if(entries[0].isIntersecting === true){
+        // To check if it works
+        // console.log('Element is fully visible in screen');
+        $('.about-effect-slide').slideDown(850, function () {
+            $('.about-effect').fadeIn(500);
+        });
+
+    }
+    else if (entries[0].isIntersecting === false){
+        // To check if it works
+        // console.log('Element is not fully visible in screen');
+        $('.about-effect').fadeOut(150);
+        $('.about-effect-slide').slideUp(150);
+
+    }        
+    
+}, { threshold: [0] });
+
+observer2.observe(document.body.querySelector(".about-text"));
+
+
 // Sevices animation
 
 let observer1 = new IntersectionObserver(function(entries) {
@@ -52,26 +77,26 @@ Boxobserver.observe(document.body.querySelector(".box-container"));
 
 
 
-// About Me animation
+// Email Me animation
 
 
-let observer2 = new IntersectionObserver(function(entries) {
+let EmailObserver = new IntersectionObserver(function(entries) {
 	if(entries[0].isIntersecting === true){
         // To check if it works
         // console.log('Element is fully visible in screen');
-        $('.about-effect-slide').slideDown(850, function () {
-            $('.about-effect').fadeIn(500);
+        $('#contact').slideDown(850, function () {
+            $('.contact-me a').fadeIn(600);
         });
 
     }
     else if (entries[0].isIntersecting === false){
         // To check if it works
         // console.log('Element is not fully visible in screen');
-        $('.about-effect').fadeOut(150);
-        $('.about-effect-slide').slideUp(150);
+        $('#contact').fadeOut(150);
+        $('.contact-me a').slideUp(150);
 
     }        
     
 }, { threshold: [0] });
 
-observer2.observe(document.body.querySelector(".about-text"));
+EmailObserver.observe(document.body.querySelector(".contact-me"));
