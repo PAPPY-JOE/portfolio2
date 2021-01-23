@@ -14,7 +14,7 @@ let FunFactObserver = new IntersectionObserver(function(entries) {
     else if (entries[0].isIntersecting === false){
         // To check if it works
         // console.log('Element is not fully visible in screen');
-        $('#f-b-t-body #text p, #f-b-t-body #CTA p').fadeOut(150);
+        // $('#f-b-t-body #text p, #f-b-t-body #CTA p').fadeOut(150);
 
     }        
     
@@ -39,7 +39,7 @@ let UpcomingsObserver = new IntersectionObserver(function(entries) {
     else if (entries[0].isIntersecting === false){
         // To check if it works
         // console.log('Element is not fully visible in screen');
-        $('#b-t-body-block #b-t-text p, #b-t-body-block #CTA p').fadeOut(150);
+        // $('#b-t-body-block #b-t-text p, #b-t-body-block #CTA p').fadeOut(150);
 
     }        
     
@@ -70,7 +70,7 @@ let Block3Observer = new IntersectionObserver(function(entries) {
     else if (entries[0].isIntersecting === false){
         // To check if it works
         // console.log('Element is not fully visible in screen');
-        $('#t-b-body div p').fadeOut(150);
+        // $('#t-b-body div p').fadeOut(150);
 
     }        
     
@@ -97,7 +97,7 @@ let DifferenceObserver = new IntersectionObserver(function(entries) {
     else if (entries[0].isIntersecting === false){
         // To check if it works
         // console.log('Element is not fully visible in screen');
-        $('#h-i-d-body div p').fadeOut(150);
+        // $('#h-i-d-body div p').fadeOut(150);
 
     }        
     
