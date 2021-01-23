@@ -8,7 +8,7 @@ $(document).ready(function () {
         if (ReadMore1Trgger === false) {
             $("#read-more1").show(1000, function () {
                 $("#read-more-btn1").text('Read Less');
-                $(".ellipses").fadeOut(0);
+                $(".ellipses1").fadeOut(0);
             });
 
             ReadMore1Trgger = true;
@@ -16,7 +16,7 @@ $(document).ready(function () {
         else if (ReadMore1Trgger === true) {
             $("#read-more1").hide(1000, function () {
                 $("#read-more-btn1").text('Read More');
-                $(".ellipses").fadeIn(0);
+                $(".ellipses1").fadeIn(0);
             });
 
             ReadMore1Trgger = false;
@@ -37,7 +37,7 @@ $(document).ready(function () {
         if (ReadMore2Trgger === false) {
             $("#read-more2").show(1000, function () {
                 $("#read-more-btn2").text('Read Less')
-                $(".ellipses").fadeOut(0);
+                $(".ellipses2").fadeOut(0);
             });
 
             ReadMore2Trgger = true;
@@ -45,7 +45,7 @@ $(document).ready(function () {
         else if (ReadMore2Trgger === true) {
             $("#read-more2").hide(1000, function () {
                 $("#read-more-btn2").text('Read More')
-                $(".ellipses").fadeIn(0);
+                $(".ellipses2").fadeIn(0);
             });
 
             ReadMore2Trgger = false;
@@ -67,7 +67,7 @@ $(document).ready(function () {
         if (ReadMore3Trgger === false) {
             $("#read-more3").show(1000, function () {
                 $("#read-more-btn3").text('Read Less')
-                $(".ellipses").fadeOut(0);
+                $(".ellipses3").fadeOut(0);
             });
 
             ReadMore3Trgger = true;
@@ -75,7 +75,7 @@ $(document).ready(function () {
         else if (ReadMore3Trgger === true) {
             $("#read-more3").hide(1000, function () {
                 $("#read-more-btn3").text('Read More')
-                $(".ellipses").fadeIn(0);
+                $(".ellipses3").fadeIn(0);
             });
 
             ReadMore3Trgger = false;
