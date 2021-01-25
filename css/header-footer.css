@@ -35,7 +35,7 @@ nav {
 .headerPrime {
   position: fixed !important;
   top: 0px !important;
-  z-index: 500000000000000000000000000000000;
+  z-index: 5000000;
 }
 
 nav ul {
