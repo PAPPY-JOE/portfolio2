@@ -32,6 +32,12 @@ nav {
   padding: 0 25px;
 }
 
+.headerPrime {
+  position: fixed !important;
+  top: 0px !important;
+  z-index: 500000000000000000000000000000000;
+}
+
 nav ul {
   display: flex;
   position: relative;
