@@ -1,0 +1,158 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.recent__work {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.recent__header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.recent__header h2 {
+  font-family: "Lato", sans-serif;
+  font-size: 35px;
+  font-weight: 800;
+  margin: 25px;
+  margin-top: 60px;
+  color: #2b2b2b;
+}
+
+.recent__header p {
+  font-size: 20px;
+  font-family: "Open Sans";
+  color: #3e3d3d;
+  margin: 5px;
+  margin-bottom: 25px;
+}
+
+.recent__header a {
+  color: black;
+  font-weight: 600;
+}
+
+/* Body */
+.recent__body {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.recent___item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 400px;
+  height: 250px;
+  margin: 15px;
+  background-color: red;
+  border-radius: 8px;
+  box-shadow: 2px 2px 9px 1px rgb(142, 141, 141);
+  position: relative;
+}
+
+.transition {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  position: absolute;
+  background-color: #1d1d1d;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.transition p {
+  color: white;
+  text-align: center;
+  margin: 20px 5px;
+  font-size: 22px;
+}
+
+.transition a {
+  font-size: 16px;
+  display: block;
+  margin: 10px 5px;
+  color: white;
+  padding: 12px;
+  border: 3px solid white;
+  border-radius: 50px;
+  transition: 0.3s all ease;
+}
+
+.transition a:hover {
+  background-color: white;
+  color: #403e3e;
+}
+
+.recent___item:hover .transition {
+  opacity: 1;
+}
+
+/* Second block */
+.second__block {
+  border-top: 1px solid #cecece;
+  margin-top: 15px;
+}
+
+.testimonial__body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  font-family: "Open Sans";
+}
+
+.circle__frame {
+  border-radius: 50%;
+  max-width: 100px;
+  max-height: 100px;
+  overflow: hidden;
+  background-color: aqua;
+  position: relative;
+  margin: 20px 5px;
+}
+
+.circle__frame img {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+.testimonial__body h3 {
+  font-size: 20px;
+  color: #3e3d3d;
+  margin: 5px;
+  margin-bottom: 25px;
+  max-width: 900px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.testimonial__body h4 {
+  font-size: 18px;
+  color: black;
+  font-weight: 800;
+  text-align: center;
+  margin: 5px;
+}
+
+.testimonial__body p {
+  margin: 5px;
+  margin-bottom: 50px;
+}
