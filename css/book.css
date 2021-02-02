@@ -555,7 +555,7 @@ main #first-block-text #CTA p:hover {
 
 .mytabs .tab a:hover {
   box-shadow: none;
-  background-color: yellowgreen;
+  background-color: #c2c1c1;
 }
 
 .mytabs input[type="radio"]:checked + label + .tab {

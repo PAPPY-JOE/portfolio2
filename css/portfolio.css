@@ -62,6 +62,10 @@
   position: relative;
 }
 
+.recent___item img {
+  filter: grayscale(90%);
+}
+
 .transition {
   display: flex;
   flex-flow: column;
@@ -132,6 +136,7 @@
 .circle__frame img {
   max-width: 100px;
   max-height: 100px;
+  filter: grayscale(100%);
 }
 
 .testimonial__body h3 {
