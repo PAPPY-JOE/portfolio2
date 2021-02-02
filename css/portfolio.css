@@ -171,4 +171,8 @@
     font-size: 30px;
     margin-top: 0px;
   }
+
+  .second__block h2 {
+    margin-top: 50px;
+  }
 }
