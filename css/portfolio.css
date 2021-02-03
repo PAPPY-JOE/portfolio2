@@ -63,6 +63,8 @@
 }
 
 .recent___item img {
+  position: relative;
+  object-fit: cover;
   filter: grayscale(90%);
 }
 
