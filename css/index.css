@@ -1017,7 +1017,7 @@ main #main-header h1 {
 
   .menu-toggle {
     position: relative;
-    padding: 10px 0;
+    padding: 60px 0 10px 0;
     display: flex;
     justify-content: space-evenly;
     background: #191919;
@@ -1067,7 +1067,6 @@ main #main-header h1 {
 
   .menu-toggle {
     position: relative;
-    padding: 10px 0;
     display: flex;
     justify-content: space-evenly;
     background: #191919;
