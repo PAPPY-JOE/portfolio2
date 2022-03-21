@@ -573,7 +573,7 @@ button:active {
 
   /* Toggle Menu */
 
-  .menu-toggle {
+  /* .menu-toggle {
     position: relative;
     padding: 10px 0;
     display: flex;
@@ -582,7 +582,7 @@ button:active {
     width: 100vw;
     z-index: 1000;
     left: -110vw;
-  }
+  } */
 
   .menu-toggle ul {
     font-family: "Open Sans", sans-serif;
@@ -790,7 +790,7 @@ nav .menu-btn i:active {
 
 /* Toggle Menu */
 
-.menu-toggle {
+/* .menu-toggle {
   position: relative;
   padding: 10px 0;
   display: flex;
@@ -799,7 +799,7 @@ nav .menu-btn i:active {
   width: 100vw;
   z-index: 1000;
   left: -110vw;
-}
+} */
 
 .menu-toggle ul {
   font-family: "Open Sans", sans-serif;
@@ -1016,7 +1016,8 @@ main #main-header h1 {
   /* Toggle Menu */
 
   .menu-toggle {
-    position: relative;
+    /* position: relative; */
+    position: fixed;
     padding: 60px 0 10px 0;
     display: flex;
     justify-content: space-evenly;
@@ -1066,7 +1067,7 @@ main #main-header h1 {
   /* Toggle Menu */
 
   .menu-toggle {
-    position: relative;
+    /* position: relative; */
     display: flex;
     justify-content: space-evenly;
     background: #191919;
